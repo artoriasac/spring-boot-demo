@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev
+
+server:
+  port: 8080
+
+mybatis:
+  mapper-locations: classpath:mapping/*.xml
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  upport-methods-arguments: true
+  params: count=countSql
+
+
+
+

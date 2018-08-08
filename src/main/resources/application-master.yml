@@ -1,0 +1,54 @@
+spring:
+    redis:
+      host: 106.14.117.123
+      port: 6379
+      password:forum
+      database: 1
+    datasource:
+      name: test
+      url: jdbc:mysql://artorias.club:3306/artorias
+      username: root
+      password: Artorias!741
+      # 使用druid数据源
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+     rabbitmq:
+          host: artorias.club
+          port: 5672
+          queueName: artorias
+
+#阿里云秘钥
+ACCESS_KEY_ID: LTAIBm52LvjIDVdO
+ACCESS_KEY_SECRET: ad8DyJ8hnE1Lr33NfcDN2NoX2wkMpd
+
+#阿里云角色
+ROLE_ARN: acs:ram::1452872783221063:role/ipasoncn
+
+#oss配置
+BUCKET_NAME: ipasoncnwebsite
+ROLE_SESSION_NAME: imgToken
+IMG_URL: https://abyss.oss-cn-qingdao.aliyuncs.com/
+REGION: oss-cn-shanghai
+FILE: forum
+
+#sts配置
+ENDPOINT: sts.cn-shanghai.aliyuncs.com
+
+#阿里云短信配置
+SING_NAME: 武汉攀升兄弟科技有限公司
+TEMPLATE_CODE: SMS_139810264
+PRODUCT: Dysmsapi
+DOMAIN: dysmsapi.aliyuncs.com

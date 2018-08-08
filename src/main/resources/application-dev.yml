@@ -1,0 +1,72 @@
+spring:
+    redis:
+      host: artorias.club
+      port: 6379
+      password: artorias
+      database: 1
+      jedis:
+        pool:
+          max-active: 8
+          max-idle: 8
+          max-wait: -1ms
+          min-idle: 0
+    datasource:
+      url: jdbc:mysql://artorias.club:3306/artorias
+      username: root
+      password: Artorias!741
+      # 使用druid数据源
+      type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.jdbc.Driver
+      filters: stat
+      maxActive: 20
+      initialSize: 1
+      maxWait: 60000
+      minIdle: 1
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: select 'x'
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      poolPreparedStatements: true
+      maxOpenPreparedStatements: 20
+    rabbitmq:
+      host: artorias.club
+      port: 5672
+      queueName: artorias
+#    session:
+#      store-type: redis
+    dubbo:
+      application:
+        name: dubbo-server
+        ower: artorias
+      registry:
+        address: zookeeper://artorias.club:2181
+      protocol:
+        name: dubbo
+        port: 20881
+
+
+#阿里云秘钥
+ACCESS_KEY_ID: LTAIcnSgxFyLJaGO
+ACCESS_KEY_SECRET: SKbzK0ZI7YcMkqQgdI2GZphzy7zAEN
+
+#阿里云角色
+ROLE_ARN: acs:ram::1297521604045258:role/artorias
+
+#oss配置
+BUCKET_NAME: abyss
+ROLE_SESSION_NAME: imgToken
+IMG_URL: https://abyss.oss-cn-qingdao.aliyuncs.com/
+REGION: oss-cn-qingdao
+FILE: forum
+
+#sts配置
+ENDPOINT: sts.cn-qingdao.aliyuncs.com
+
+#阿里云短信配置
+SING_NAME: 江骏平
+TEMPLATE_CODE: SMS_139850300
+PRODUCT: Dysmsapi
+DOMAIN: dysmsapi.aliyuncs.com
+
