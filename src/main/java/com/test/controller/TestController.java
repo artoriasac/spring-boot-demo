@@ -1,6 +1,7 @@
 package com.test.controller;
 
 import com.annotation.Login;
+import com.common.kafka.KafkaService;
 import com.common.rabbitMq.impl.RabbitMqServiceImpl;
 import com.common.model.DataInfo;
 import com.common.model.Result;
@@ -33,6 +34,9 @@ public class TestController {
     @Autowired
     private RabbitMqServiceImpl rabbitMqService;
 
+    @Autowired
+    private KafkaService kafkaService;
+
 
     @PostMapping("test")
     public Result<DataInfo<Test>> test(HttpServletRequest request){
@@ -57,7 +61,6 @@ public class TestController {
 
     }
 
-    @ResponseBody
     @RequestMapping("cookie/{browser}")
     public String cookie(@PathVariable("browser") String browser, HttpServletRequest request, HttpSession session) {
         //取出session中的browser
@@ -75,6 +78,11 @@ public class TestController {
             }
         }
         return "index";
+    }
+
+    @PostMapping("kafkaTest")
+    public void kafkaTest(@RequestBody String s){
+        kafkaService.send("test",null,s);
     }
 
 }
