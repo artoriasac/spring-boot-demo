@@ -24,6 +24,7 @@ public class RabbitMqServiceImpl implements RabbitMqService{
     @Value("${spring.rabbitmq.queueName}")
     private String queueName;
 
+    @Override
     public void send(String message) {
         rabbitTemplate.convertAndSend(queueName, message);
     }

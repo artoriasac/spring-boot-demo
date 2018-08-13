@@ -1,5 +1,6 @@
 package com.test.service.impl;
 
+import com.annotation.MyService;
 import com.annotation.TestAnnotation;
 import com.common.redis.service.RedisService;
 import com.common.model.DataInfo;
