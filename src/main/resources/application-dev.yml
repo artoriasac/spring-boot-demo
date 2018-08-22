@@ -2,7 +2,7 @@ spring:
     redis:
       host: artorias.club
       port: 6379
-      password: artorias
+      password: YOUR_PASSWORD
       database: 1
       jedis:
         pool:
