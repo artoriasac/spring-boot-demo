@@ -12,8 +12,8 @@ spring:
           min-idle: 0
     datasource:
       url: jdbc:mysql://artorias.club:3306/artorias
-      username: root
-      password: Artorias!741
+      username: YOUR_USERNAME
+      password: YOUR_PASSWORD
       # 使用druid数据源
       type: com.alibaba.druid.pool.DruidDataSource
       driver-class-name: com.mysql.jdbc.Driver
