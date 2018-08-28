@@ -12,4 +12,6 @@ import com.test.model.Test;
 public interface TestService {
 
     DataInfo<Test> test();
+
+    void qrCode();
 }

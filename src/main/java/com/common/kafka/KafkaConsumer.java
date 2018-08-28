@@ -13,8 +13,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class KafkaConsumer {
 
-    @KafkaListener(topics = {"test"})
-    public void listen(ConsumerRecord<?, ?> record) {
-        System.out.printf("offset = %d,key =%s,value=%s\n", record.offset(), record.key(), record.value());
-    }
+//    @KafkaListener(topics = {"test"})
+//    public void listen(ConsumerRecord<?, ?> record) {
+//        System.out.printf("offset = %d,key =%s,value=%s\n", record.offset(), record.key(), record.value());
+//    }
 }

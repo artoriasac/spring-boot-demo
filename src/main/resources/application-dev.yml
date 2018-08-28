@@ -2,7 +2,7 @@ spring:
     redis:
       host: artorias.club
       port: 6379
-      password: YOUR_PASSWORD
+      password: artorias
       database: 1
       jedis:
         pool:
@@ -12,8 +12,8 @@ spring:
           min-idle: 0
     datasource:
       url: jdbc:mysql://artorias.club:3306/artorias
-      username: YOUR_USERNAME
-      password: YOUR_PASSWORD
+      username: root
+      password: Artorias!741
       # 使用druid数据源
       type: com.alibaba.druid.pool.DruidDataSource
       driver-class-name: com.mysql.jdbc.Driver
