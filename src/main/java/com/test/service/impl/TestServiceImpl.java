@@ -42,9 +42,9 @@ public class TestServiceImpl implements TestService {
 
     private static final String EXCLE_PATH="D:/qrCode.xls";
 
-    private static final  String ACCESS_KEY_ID="LTAIBm52LvjIDVdO";
+    private static final  String ACCESS_KEY_ID="ACCESS_KEY_ID";
 
-    private static final String ACCESS_KEY_SECRET="ad8DyJ8hnE1Lr33NfcDN2NoX2wkMpd";
+    private static final String ACCESS_KEY_SECRET="ACCESS_KEY_SECRET";
 
     private static final String ROLE_ARN="acs:ram::1452872783221063:role/ipasoncn";
 
