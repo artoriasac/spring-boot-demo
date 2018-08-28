@@ -60,8 +60,4 @@ public class DynamicLink {
          }
          return false;
     }
-
-    public int[] id(){
-        return id;
-    }
 }
