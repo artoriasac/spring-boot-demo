@@ -26,7 +26,7 @@ public class DynamicLink {
         }
     }
 
-     public int count(){
+    public int count(){
          return count;
      }
 
