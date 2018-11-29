@@ -20,7 +20,7 @@ public class SpearmanUtil {
         Double sum1=new Double(0);
         Double sum2=new Double(0);
         try {
-            for (int i = 0; i < size; i++) {
+            for (int i = 0; i < size; i++){
                 Double double1 = Double.valueOf(list1.get(i).toString());
                 doubleList1.add(double1);
                 index1.add(i);
@@ -76,7 +76,6 @@ public class SpearmanUtil {
                 }
             }
         }
-
     }
 
     private static void swap(List list,Integer index1,Integer index2){
@@ -84,5 +83,4 @@ public class SpearmanUtil {
         list.set(index1,list.get(index2));
         list.set(index2,o);
     }
-
 }
